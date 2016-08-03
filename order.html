@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>order</title>
+    <link rel="stylesheet" type="text/css" href="css/cating.css"/>
+    <script type="text/javascript" src="js/touch-2.14.js"></script>
+</head>
+<body class="needsclick">
+<div id="order_list" class="order-list">
+    <header class="header">
+        <div class="header-bar">
+            <h1>订单列表</h1>
+            <a class="right-icon"></a>
+        </div>
+    </header>
+    <section class="cating-box" id="cating_box">
+        <div class="nav-left">
+            <div class="nav-list" id='nav_list'>
+                <ul>
+                    <li class="nav-item"><p><img src="img/tc2_icon@2.png" alt="" /></p>套餐</li>
+                    <li class="nav-item"><p><img src="img/xc2_icon@2.png" alt="" /></p>小炒</li>
+                    <li class="nav-item"><p><img src="img/mt2_icon@2.png" alt="" /></p>面/粉类</li>
+                    <li class="nav-item"><p><img src="img/dx2_icon@2.png" alt="" /></p>点心</li>
+                    <li class="nav-item"><p><img src="img/yl2_icon@2.png" alt="" /></p>饮料</li>
+                    <li class="nav-item">套餐</li>
+                    <li class="nav-item">小炒</li>
+                    <li class="nav-item">面/粉类</li>
+                    <li class="nav-item">点心</li>
+                    <li class="nav-item">饮料</li>
+                    <li class="nav-item">套餐</li>
+                    <li class="nav-item">小炒</li>
+                    <li class="nav-item">面/粉类</li>
+                    <li class="nav-item">点心</li>
+                    <li class="nav-item">饮料</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cating-list">
+            <div class="cating-tab hidden" name="combo">
+                <div class="cating-list-item">
+                    <div class="img-item"><img src="img/1.png" alt="" /></div>
+                    <div class="desc-item">
+                        <p class="item-name ellipsis">套餐1</p>
+                        <p class="item-num">月售22份</p>
+                        <p class="price">￥23</p>
+                        <div class="order-action">
+                            <i class="add"></i>
+                            <span class="order-num">0</span>
+                            <i class="cut"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cating-list-item">
+                    <div class="img-item"><img src="img/1.png" alt="" /></div>
+                    <div class="desc-item">
+                        <p class="item-name ellipsis">套餐2</p>
+                        <p class="item-num">月售22份</p>
+                        <p class="price">￥23</p>
+                        <div class="order-action">
+                            <i class="add"></i>
+                            <span class="order-num">0</span>
+                            <i class="cut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cating-tab hidden" name="single">
+                <div class="cating-list-item">
+                    <div class="img-item"><img src="img/2.png" alt="" /></div>
+                    <div class="desc-item">
+                        <p class="item-name ellipsis">家常小炒肉</p>
+                        <p class="item-num">月售22份</p>
+                        <p class="price">￥22</p>
+                        <div class="order-action">
+                            <i class="add"></i>
+                            <span class="order-num">0</span>
+                            <i class="cut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cating-tab hidden" name="single">
+                <div class="cating-list-item">
+                    <div class="img-item"><img src="img/3.png" alt="" /></div>
+                    <div class="desc-item">
+                        <p class="item-name ellipsis">家常小炒肉</p>
+                        <p class="item-num">月售22份</p>
+                        <p class="price">￥22</p>
+                        <div class="order-action">
+                            <i class="add"></i>
+                            <span class="order-num">0</span>
+                            <i class="cut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cating-tab hidden" name="single">
+                <div class="cating-list-item">
+                    <div class="img-item"><img src="img/4.png" alt="" /></div>
+                    <div class="desc-item">
+                        <p class="item-name ellipsis">家常小炒肉</p>
+                        <p class="item-num">月售22份</p>
+                        <p class="price">￥22</p>
+                        <div class="order-action">
+                            <i class="add"></i>
+                            <span class="order-num">0</span>
+                            <i class="cut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cating-tab hidden" name="single">
+                <div class="cating-list-item">
+                    <div class="img-item"><img src="img/5.png" alt="" /></div>
+                    <div class="desc-item">
+                        <p class="item-name ellipsis">家常小炒肉</p>
+                        <p class="item-num">月售22份</p>
+                        <p class="price">￥22</p>
+                        <div class="order-action">
+                            <i class="add"></i>
+                            <span class="order-num">0</span>
+                            <i class="cut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="s-pop-combo hidden" id="s_pop_combo">
+        <div class="s-combo">
+            <div class="s-combo-bg"></div>
+            <div class="s-combo-table">
+                <div class="s-combo-list">
+                    <h5 class="s-combo-h5">配套选择：允许点击总数量&nbsp;&nbsp;<em id="clickoNum">8</em></h5>
+                    <div class="s-combo-title">
+                        <ul>
+                            <li>&nbsp;配套选择</li>
+                            <li>商品名称</li>
+                            <li>点单数量</li>
+                            <li>允许单点数量</li>
+                        </ul>
+                    </div>
+                    <div class="s-list">
+                        <ul class="s-list-left">
+                            <li class="checked">第一组</li>
+                            <li>第二组</li>
+                            <li>第三组</li>
+                        </ul>
+                        <div class="s-list-right">
+                            <div class="s-combo-content hidden">
+                                <ul class="s-list-item">
+                                    <li class="s-list-name">啤酒</li>
+                                    <li class="s-list-inpnum"><input type="text"  value="1"/></li>
+                                    <li class="s-list-num">3</li>
+                                </ul>
+                                <ul class="s-list-item ">
+                                    <li class="s-list-name">啤酒</li>
+                                    <li class="s-list-inpnum"><input type="text"  value="2"/></li>
+                                    <li class="s-list-num">3</li>
+                                </ul>
+                                <ul class="s-list-item">
+                                    <li class="s-list-name">可乐</li>
+                                    <li class="s-list-inpnum"><input type="text"  value="3"/></li>
+                                    <li class="s-list-num">3</li>
+                                </ul>
+                                <ul class="s-list-item">
+                                    <li class="s-list-name">cocacole</li>
+                                    <li class="s-list-inpnum"><input type="text"  value=""/></li>
+                                    <li class="s-list-num">3</li>
+                                </ul>
+                                <ul class="s-list-item ">
+                                    <li class="s-list-name">啤酒</li>
+                                    <li class="s-list-inpnum"><input type="text"  value=""/></li>
+                                    <li class="s-list-num">3</li>
+                                </ul>
+                                <ul class="s-list-item">
+                                    <li class="s-list-name">可乐</li>
+                                    <li class="s-list-inpnum"><input type="text"  value=""/></li>
+                                    <li class="s-list-num">3</li>
+                                </ul>
+                                <ul class="s-list-item">
+                                    <li class="s-list-name">cocacole</li>
+                                    <li class="s-list-inpnum"><input type="text"  value=""/></li>
+                                    <li class="s-list-num">3</li>
+                                </ul>
+                            </div>
+                            <div class="s-combo-content hidden">
+                                <ul class="s-list-item">
+                                    <li class="s-list-name">可乐</li>
+                                    <li class="s-list-inpnum"><input type="text"  value=""/></li>
+                                    <li class="s-list-num">3</li>
+                                </ul>
+                                <ul class="s-list-item">
+                                    <li class="s-list-name">啤酒</li>
+                                    <li class="s-list-inpnum"><input type="text"  value=""/></li>
+                                    <li class="s-list-num">3</li>
+                                </ul>
+                            </div>
+                            <div class="s-combo-content hidden">
+                                <ul class="s-list-item">
+                                    <li class="s-list-name">cocacole</li>
+                                    <li class="s-list-inpnum"><input type="text" disabled="" value="1"/></li>
+                                    <li class="s-list-num">3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-combo-foot">
+                        <input type="button" id="s_comboqr" class="opac-6" value="确认"/>
+                        <input type="button" id="s_comboqx" value="取消"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="addanimate">1</div>
+    <div class="cating-foot">
+        <div class="foot-content">
+            <div class="total"><span>共￥</span><span id="total_price1"></span><span id="shop-temp">购物车是空的</span></div>
+            <div class="finish" id="finish">选好了</div>
+            <div class="shoping" id="shoping_car">
+                <div class="total-parent">
+                    <div class="total-num" id="total_num">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shoping-car">
+        <div class="shop-car">
+            <div class="shop-car-bg"></div>
+            <div class="shop-car-table">
+                <div class="shop-menu">
+                    <ul>
+                        <li class="title">购物车</li>
+                        <li class="temp">清空全部</li>
+                    </ul>
+                </div>
+                <div class="shop-list">
+                    <div class="shop-list-auto">
+                        <!--<div class="item">
+                            <ul>
+                                <li class="shop-name">家常小炒肉</li>
+                                <li class="shop-price">￥22</li>
+                                <li class="shop-control-num">
+                                    <i class="add"></i>
+                                    <span class="order-num"></span>
+                                    <i class="cut"></i>
+                                </li>
+                            </ul>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="commitBody" id="commit_order">
+    <header class="header">
+        <div class="header-bar">
+            <a class="left-icon" id="left_icon"></a>
+            <h1>提交订单</h1>
+            <a class="right-icon"></a>
+        </div>
+    </header>
+    <form method="post">
+        <section class="commit-section">
+            <div class="commit-list">
+                <h1 class="title border-b">商品</h1>
+                <div class="border-b" id="shops_info">
+                    <!--<div class="list-desc">
+                        <div class="order-name">玫瑰糖水芋艿</div>
+                        <div class="item">x 2</div>
+                        <div class="item text-right">￥ 22</div>
+                    </div>-->
+                </div>
+                <div class="clear"></div>
+                <div class="total-price">
+                    <label>合计金额</label>
+                    <span id="total_price">￥90</span>
+                </div>
+            </div>
+            <div class="commit-list commit-form">
+                <h1 class="title border-b">选择支付方式</h1>
+                <div class="border-b">
+                    <div class="list-desc">
+                        <div class="order-name">现场支付</div>
+                        <div class="item text-right"><input type="radio" checked=""  name="way" /></div>
+                    </div>
+                    <div class="list-desc">
+                        <div class="order-name">支付宝</div>
+                        <div class="item text-right"><input type="radio" name="way"/></div>
+                    </div>
+                    <div class="list-desc">
+                        <div class="order-name">微信</div>
+                        <div class="item text-right"><input type="radio" name="way" /></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="cating-foot commitFoot" id="commit_foot"><input type="button" value="确认下单" /></div>
+    </form>
+    <div class="order-end hidden">
+    </div>
+    <div class="end-parent hidden">
+        <div class="pay-end lose hidden">
+            <p class="pay-icon"><img src="img/pay_lose.png" alt="" /></p>
+            <p class="pay-info">付款完成</p>
+        </div>
+        <div class="pay-end success hidden">
+            <p class="pay-icon"><img src="img/pay_suc.png" alt="" /></p>
+            <p class="pay-info">付款完成</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/fastclick.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        FastClick.attach(document.body);
+        domhandle(); //文档操作
+        var oTotalNum=0;  //总数量
+        var oTotalPrice=0;	//总价格
+        var shopArr=[];		// 食品数组
+        var shopObj={};		//食品对象
+        var oListId=0;		//商品序号
+        var oNumArr=[0,0,0];//oNum,oListId,oTotalNum  数量序列总数数组
+        var oShopInfo;  //单品参数数组
+        var oComArr=[],oComObj={},oComNumArr=[0,0],oComInfo;//套餐
+        shopForId();    //食品ID
+        catingTab();  //切换类别
+        orderWay();  //点餐
+        payEnd();    //订单完成
+        pophandle();   //弹出层操作
+        //finishOrder();  //选好食品
+        totalNum();
+        function domhandle(){
+            var oNav_list=document.getElementById("nav_list");
+            var oCating_box=document.getElementById('cating_box');
+            var oHeight=window.innerHeight;
+            $(".shop-list").css("max-height",oHeight-93); //左侧食品类别高度
+            oNav_list.style.height=oHeight-93+"px";
+            $(".s-combo-list").css("max-height",oHeight-200);
+            $(".s-list-left").css("max-height",oHeight-328);  //左侧弹出窗高度
+            $(".s-list-right").css("max-height",oHeight-328);
+        }
+        function pophandle(){
+            var _clickoNumArr=[8,4,1];
+            $(".s-list-left li").each(function(i){
+                $(this).on("click",function(){
+                    $(this).addClass("checked").siblings().removeClass("checked");
+                    $(".s-combo-content").eq(i).show().siblings().hide();
+                    $("#clickoNum").html(_clickoNumArr[i]);
+                    _comboI=function(){
+                        return i;
+                    }
+                })
+                if(i==0){
+                    $(".s-combo-content").eq(i).show();
+                    $(this).addClass("checked");
+                    $("#clickoNum").html(_clickoNumArr[i]);
+                    _comboI=function(){
+                        return i;
+                    }
+                }
+            })
+            $("#s_comboqx").on("click",function(){
+                $("#s_pop_combo").hide();
+            })
+            $(".s-combo-bg").on("click",function(){
+                $("#s_pop_combo").hide();
+            })
+        }
+        function comboselect(){ //套餐选择
+            var _ClickoNum;  //允许操作的最大值
+            var _thisVal;  //当前input的值
+            var _maxVal;         //当前允许最大值
+            var _singleNum;  //单个input值
+            var _inpDiv;     //当前套餐组的input
+            $(".s-list-inpnum input").each(function(){   //input判断
+                $(this).keyup(function(){
+                    var _oTNum=0;  //用户最大值
+                    _ClickoNum=parseInt($("#clickoNum").html());
+                    _inpDiv=$(".s-combo-content").eq(_comboI()).find("input");
+                    _thisVal=$(this).val();
+
+                    _maxVal=parseInt($(this).parent().next().html());
+                    if(_thisVal<=_maxVal){
+                        for(var k=0;k<_inpDiv.length;k++){
+                            _singleNum=_inpDiv.eq(k).val();
+                            if(_singleNum!=""){
+                                _oTNum=_oTNum+parseInt(_singleNum);
+                            }
+                        }
+                        if(_oTNum>_ClickoNum){
+                            _thisVal=_thisVal-(_oTNum-_ClickoNum);
+                            $(this).val(_thisVal);
+                        }
+                    }else{
+                        for(var k=0;k<_inpDiv.length;k++){
+                            _singleNum=_inpDiv.eq(k).val();
+                            if(_singleNum!=""){
+                                _oTNum=_oTNum+parseInt(_singleNum);
+                            }
+                        }
+                        if(_oTNum>_ClickoNum){
+                            _thisVal=_thisVal-(_oTNum-_ClickoNum);
+                            if(_thisVal>_maxVal){
+                                _thisVal=_maxVal;
+                                $(this).val(_thisVal);
+                            }else{
+                                $(this).val(_thisVal);
+                            }
+                            for(var k=0;k<_inpDiv.length;k++){
+                                _singleNum=_inpDiv.eq(k).val();
+                                if(_singleNum==""){
+                                    _inpDiv.eq(k).val(0);
+                                }
+                            }
+                        }else{
+                            _thisVal=_maxVal;
+                            $(this).val(_thisVal);
+                        }
+
+                    }
+                })
+            })
+
+
+        }
+        var comArr={},comNumArr={},comNameArr={},comPriceArr={};
+        comboselect();
+        function comboFood(_qrthis){
+            var _comInp=_qrthis.parent().prev().find(".s-list-inpnum input");
+            var s=oComNumArr[1]-1;     //套餐所对应的序列id
+            comArr[s]=[],comNumArr[s]=[],comNameArr[s]=[],comPriceArr[s]=[];
+            _comInp.each(function(i){
+                if(_comInp.eq(i).val()!=""&&_comInp.eq(i).val()!=0){
+                    oComObj[s][i]={};
+                    oComObj[s][i]["num"]=_comInp.eq(i).val();
+                    oComObj[s][i]["name"]=_comInp.eq(i).parent().prev().html();
+                    oComObj[s][i]["price"]=0;
+                    comArr[s].push(i);
+                }
+            })
+            var arrId;
+            for(var c in comArr[s]){      //封装套餐参数
+                arrId=oComObj[s][comArr[s][c]];
+                comNumArr[s].push(Number(arrId["num"]));
+                comNameArr[s].push(arrId["name"]);
+                comPriceArr[s].push(Number(arrId["price"]));
+            }
+//                    for(var b in oComArr){
+//                        var a=oComArr[b]-1;
+//                        alert(comNumArr[a]);
+//                        alert(comNameArr[a]);
+//                        alert(comPriceArr[a]);
+//                        for(var d in comNumArr[a]){
+//                            alert(comNumArr[a][d]);
+//                        }
+//                    }
+
+        }
+        function catingTab(){
+            var k=0;
+            var y;
+            $("#nav_list li").eq(k).addClass("checked");
+            $("#order_list section div.cating-tab").eq(k).removeClass("hidden");
+            $("#nav_list li").each(function(i){
+                $(this).click(function(){
+                    y=i+1;
+                    $(this).addClass("checked").siblings().removeClass("checked");
+                    $(".cating-tab").eq(i).siblings().hide();
+                    $(".cating-tab").eq(i).show();
+                    if($("#shoptab_"+y).length==false){
+                        $(".cating-tab").eq(i).append('<div id="shoptab_'+y+'"></div>');
+                    }
+                    $("#shoptab_"+y).html('菜类'+y);
+                })
+                if(i==0){$(this).click();}
+            })
+
+        }
+        var _thisCom;
+        function comClick(){
+            var comadd=$("div[name=combo] div.order-action .add");
+            var comcut=$("div[name=combo] div.order-action .cut");
+            var oComHandle;
+            comadd.on("click",function(){  //套餐点餐
+                _thisCom=$(this);
+                oComHandle=true;
+                _oComThis=function(){
+                    return _thisCom;
+                }
+                var oOrderNum=_thisCom.parent().find('.order-num');   //餐品数
+                var oNum=parseInt(oOrderNum.html());
+                oComNumArr[0]=oNum;
+                if(oComNumArr[0]<1){
+                    $("#s_pop_combo").show();
+                }else{
+                    listcomCut($(this),oComHandle);
+                    addAni(_thisCom);
+                }
+            })
+
+            comcut.on("click",function(){
+                var oOrderNum=_thisCom.parent().find('.order-num');   //餐品数
+                var oNum=parseInt(oOrderNum.html());
+                oComNumArr[0]=oNum;
+                oComHandle=false;
+                listcomCut($(this),oComHandle);
+                totalNum();
+            })
+        }
+        function listcomCut(_thisAni,oHandle){
+            oHandle ? oComNumArr[0]++ : oComNumArr[0]--;
+            var _comItem=_thisAni.parent().attr("id").split('_')[1];  //获得购物车里面所操作商品的id
+            var q=_comItem-1;
+            var p=q+1;
+            var comIdItem;
+            var singlePrice;
+            var prevComNum=oComObj[q]['num'];
+            oHandle ? oComObj[q]['num']+=1 : oComObj[q]['num']-=1;   //购物车操作为加商品数量增加，反之相反
+            if(oComObj[q]['num']>0){  //下面三元运算符如果购物车操作是加，会除以加之前的数量，获得此单品的单价
+                oComObj[q]['price']=oComObj[q]['price']/(oHandle ? oComObj[q]['num']-1 : oComObj[q]['num']+1)*oComObj[q]['num'];
+                for(var comq in comArr[q]){
+                    oHandle ? comNumArr[q][comq]+=(comNumArr[q][comq]/prevComNum) : comNumArr[q][comq]-=(comNumArr[q][comq]/prevComNum);
+                    oHandle ? comPriceArr[q][comq]+=(comPriceArr[q][comq]/prevComNum) : comPriceArr[q][comq]-=(comPriceArr[q][comq]/prevComNum);
+                }
+                $("#com_"+p).find('.order-num').html(oComObj[q]['num']);
+            }else if(oComObj[q]['num']==0){  //如果该商品减完，就删掉该商品操作
+                $("#com_"+p).find('.order-num').html(0);
+                oComArr.splice($.inArray(p,oComArr),1);
+                $("#com_"+p).find('.add').removeClass('active');
+                $("#com_"+p).find('.add').siblings().hide();
+                $("#com_"+p).removeAttr("list_num").removeAttr("id");
+
+            }
+            //下面是单价
+            singlePrice=oComObj[q]['num']==0 ? oComObj[q]['price'] : oComObj[q]['price']/oComObj[q]['num'];
+            oTotalPrice=oHandle ? oTotalPrice+singlePrice : oTotalPrice-singlePrice;
+            oHandle ? oNumArr[2]++ : oNumArr[2]--;
+        }
+        comClick();
+        function orderWay(){
+            var sinadd=$("div[name=single] div.order-action .add");
+            var sincut=$("div[name=single] div.order-action .cut");
+            sinadd.on("click",function(){  //点餐
+                var oOrderNum=$(this).parent().find('.order-num');   //餐品数
+                var oNum=parseInt(oOrderNum.html());
+                oNumArr[0]=oNum;
+                var _thisAni=$(this);
+                var oShopP;
+                var oForId;
+                var oShopName;
+                var oShopPriceStr;
+                var oShopPriceStrs;
+                var oShopPrice;
+                oShopInfo=[oShopP,oForId,oShopName,oShopPriceStr,oShopPriceStrs,oShopPrice];
+                foodplus(_thisAni);
+                addAni(_thisAni);
+
+                _oThis=function(){   //为了防止套餐确认之后随着确认点击的次数增加套餐的数量也增加，分离出点击事件，返回一个当前的变量，方便调用
+                    return _thisAni;
+                }
+
+            })
+            sincut.on("click",function(){  //取消
+                var _thisAni=$(this);
+                footcut(_thisAni);
+                totalNum();
+            })
+            $("#finish").click(function(){
+                if(oNumArr[2]>0){
+                    $("#order_list").hide();
+                    showShopInfo(shopArr);
+                    $("html").addClass("bg100");
+                    $("#commit_order").show();
+                }
+            })
+            $("#left_icon").click(function(){
+                $("#commit_order").hide();
+                $("#order_list").show();
+                $("html").removeClass("bg100");
+            })
+
+
+            var carShow=true;  //购物车显示隐藏变量
+
+            $(".shop-car-bg").click(function(){
+                $(".shoping-car").hide();
+                $("#shoping_car").removeClass("shoping-active");
+                carShow=true;
+            })
+//					var oNumArr=[oNum,oListId,oTotalNum];
+//				var oShopInfo=[oShopP,oForId,oShopName,oShopPriceStr,oShopPriceStrs,oShopPrice];
+            $("#shoping_car").click(function(){  //购物车点击
+                if(carShow){
+                    $(this).addClass("shoping-active");
+                    shopCar(shopArr);
+                    $(".shoping-car").show();
+                    carShow=false;
+                }else{
+                    $(this).removeClass("shoping-active");
+                    $(".shoping-car").hide();
+                    carShow=true;
+                }
+                var ctrCut=$("[id^=shopitem_]").find(".shop-control-num .cut");
+                ctrCut.click(function(){//购物车减
+                    var _this=$(this);
+                    var oHandle=false;
+                    shopCarhandle(_this,oHandle);
+                    totalNum();
+                })
+                var ctrAdd=$("[id^=shopitem_]").find(".shop-control-num .add");
+                ctrAdd.click(function(){   //购物车添加
+                    var _this=$(this);
+                    var oHandle=true;
+                    shopCarhandle(_this,oHandle);
+                    totalNum();
+                })
+                var ctrComCut=$("[id^=comitem_]").find(".shop-control-num .cut");
+                ctrComCut.click(function(){
+                    var _this=$(this);
+                    var oHandle=false;
+                    comCarhandle(_this,oHandle);
+                    totalNum();
+                })
+                var ctrComAdd=$("[id^=comitem_]").find(".shop-control-num .add");
+                ctrComAdd.click(function(){
+                    var _this=$(this);
+                    var oHandle=true;
+                    comCarhandle(_this,oHandle);
+                    totalNum();
+                })
+
+            })
+            $(".temp").click(function(){  //购物车清空操作
+                $("[id^=shop_]").find(".cut").hide();
+                $("[id^=shop_]").find(".add").removeClass("active");
+                $("[id^=shop_]").find(".order-num").html(0).hide();
+                $("[id^=shop_]").removeAttr("list_num").removeAttr("id");
+                $("[id^=com]").find(".cut").hide();
+                $("[id^=com_]").find(".add").removeClass("active");
+                $("[id^=com_]").find(".order-num").html(0).hide();
+                $("[id^=com_]").removeAttr("list_num").removeAttr("id");
+                shopArr=[];
+                oComArr=[];
+                shopObj={};
+                oComInfo;
+                oNumArr=[0,0,0];
+                oComNumArr=[0,0]; //套餐id数目，套餐Id
+                oTotalPrice=0;
+                $(".shop-list-auto").html("");
+                $(".shoping-car").hide();
+                carShow=true;
+                totalNum();
+            })
+        }
+        function complus(){  //增加商品
+            var oOrderNum=_thisCom.parent().find('.order-num');   //餐品数
+            var oNum=parseInt(oOrderNum.html());
+            oComNumArr[0]=oNum;
+            var oShopP,oForId,oShopName,oShopPriceStr,oShopPriceStrs,oShopPrice;
+            oComInfo=[oShopP,oForId,oShopName,oShopPriceStr,oShopPriceStrs,oShopPrice];
+            oComNumArr[0]++;
+            if(oComNumArr[0]>0){
+                oOrderNum=_thisCom.parent().find('.order-num').html(oComNumArr[0]);
+                oComInfo[0]=_thisCom.parent().parent();
+                oComInfo[1]=oComInfo[0].attr("forId");    //商品id
+                oComInfo[2]=oComInfo[0].find("p.item-name").html();  // 商品名称
+                oComInfo[3]=oComInfo[0].find("p.price").html();   //商品价格
+                oComInfo[4]=parseInt(oComInfo[3].split('￥')[1]);
+                oComInfo[5]=oComInfo[4]*oComNumArr[0];
+                oNumArr[2]++;      //总数量
+                oTotalPrice=oTotalPrice+oComInfo[4];  //总价格
+                _thisCom.addClass("active");
+                _thisCom.siblings().show();
+                if(oComNumArr[0]<=1){
+                    oComNumArr[1]++;
+                    _thisCom.parent().attr('id','com_'+oComNumArr[1]);
+                    oComArr.push(oComNumArr[1]);
+                    var oList_num=parseInt(oComArr.length-1);
+                    _thisCom.parent().attr("list_num",oComNumArr[1]);
+                    //给数组添加序号
+                    //addShop(oForId,oShopName,oShopPrice,oNum,oTotalNum,shopObj);  //添加食品对象
+                    function addshop(){
+                        var t=oComNumArr[1]-1;
+                        oComObj[t]={};
+                        if(oComObj[t]['forid']==null||oComObj[t]['forid']==""){
+                            oComObj[t]['forid']=oComInfo[1];  //菜ID
+                            oComObj[t]['name']=oComInfo[2];  //菜名
+                            oComObj[t]['price']=oComInfo[5];  //菜价
+                            oComObj[t]['num']=oComNumArr[0];			//菜数量
+                        }
+                        return oComObj;
+                    }
+                    addshop();
+                }else{
+                    var t=parseInt(_thisCom.parent().attr("list_num")-1);
+                    oComObj[t]['price']=oComInfo[5];
+                    oComObj[t]['num']=oComNumArr[0];
+                }
+            }
+        }
+//				var oNumArr=[oNum,oListId,oTotalNum];
+//				var oShopInfo=[oShopP,oForId,oShopName,oShopPriceStr,oShopPriceStrs,oShopPrice];
+        function foodplus(_thisAni){  //增加商品
+            oNumArr[0]++;
+            if(oNumArr[0]>0){
+                oOrderNum=_thisAni.parent().find('.order-num').html(oNumArr[0]);
+                oShopInfo[0]=_thisAni.parent().parent();
+                oShopInfo[1]=oShopInfo[0].attr("forId");    //商品id
+                oShopInfo[2]=oShopInfo[0].find("p.item-name").html();  // 商品名称
+                oShopInfo[3]=oShopInfo[0].find("p.price").html();   //商品价格
+                oShopInfo[4]=parseInt(oShopInfo[3].split('￥')[1]);
+                oShopInfo[5]=oShopInfo[4]*oNumArr[0];
+                oNumArr[2]++;      //总数量
+                oTotalPrice=oTotalPrice+oShopInfo[4];  //总价格
+                _thisAni.addClass("active");
+                _thisAni.siblings().show();
+                if(oNumArr[0]<=1){
+                    oNumArr[1]++;
+                    _thisAni.parent().attr('id','shop_'+oNumArr[1]);
+                    shopArr.push(oNumArr[1]);
+                    var oList_num=parseInt(shopArr.length-1);
+                    _thisAni.parent().attr("list_num",oNumArr[1]);
+                    //给数组添加序号
+                    //addShop(oForId,oShopName,oShopPrice,oNum,oTotalNum,shopObj);  //添加食品对象
+                    function addshop(){
+                        var t=oNumArr[1]-1;
+                        shopObj[t]={};
+                        if(shopObj[t]['forid']==null||shopObj[t]['forid']==""){
+                            shopObj[t]['forid']=oShopInfo[1];  //菜ID
+                            shopObj[t]['name']=oShopInfo[2];  //菜名
+                            shopObj[t]['price']=oShopInfo[5];  //菜价格
+                            shopObj[t]['num']=oNumArr[0];				//菜数量
+                        }
+                        return shopObj;
+                    }
+                    addshop();
+                }else{
+                    var t=parseInt(_thisAni.parent().attr("list_num")-1);
+                    shopObj[t]['price']=oShopInfo[5];
+                    shopObj[t]['num']=oNumArr[0];
+                }
+            }
+        }
+        function footcut(_thisAni){  //减少商品
+            var oOrderNum=_thisAni.parent().find('.order-num');
+            var oNum=parseInt(oOrderNum.html());
+            oNumArr[0]--;
+            oOrderNum=_thisAni.parent().find('.order-num').html(oNumArr[0]);
+            var t=parseInt(_thisAni.parent().attr("list_num")-1);
+            oShopInfo[0]=_thisAni.parent().parent();
+            oShopInfo[3]=oShopInfo[0].find("p.price").html();
+            oShopInfo[4]=parseInt(oShopInfo[3].split('￥')[1]); //单个食品每份价格
+            oShopInfo[5]=oShopInfo[4]*oNum;		//单个食品合计价格
+            oNumArr[2]--;  //总数量
+            oTotalPrice=oTotalPrice-oShopInfo[4];    //总价格
+            if(oNumArr[0]<1){
+                _thisAni.hide();
+                _thisAni.prev().hide();
+                _thisAni.prev().prev().removeClass('active');
+                shopArr.splice($.inArray(t+1,shopArr),1);
+                _thisAni.parent().removeAttr('id');
+                _thisAni.parent().removeAttr('list_num');
+            }else if(oNumArr[0]>0){
+                shopObj[t]['price']=oShopInfo[5];
+                shopObj[t]['num']=oNumArr[0];
+            }
+        }
+        function shopCarhandle(_this,oHandle){    //购物车加减操作
+            var _shopItem=_this.parent().parent().attr("id").split('_')[1];  //获得购物车里面所操作商品的id
+            var _arrq=_shopItem-1;   //购物车里面所操作商品的id转化为所存数组对象的索引
+            oHandle ? shopObj[_arrq]['num']+=1 : shopObj[_arrq]['num']-=1;   //购物车操作为加商品数量增加，反之相反
+            cutShop(_arrq,oHandle);
+        }
+        function cutShop(q,oHandle){
+            var p=q+1;
+            var singlePrice;
+            if(shopObj[q]['num']>0){  //下面三元运算符如果购物车操作是加，会除以加之前的数量，获得此单品的单价
+                shopObj[q]['price']=shopObj[q]['price']/(oHandle ? shopObj[q]['num']-1 : shopObj[q]['num']+1)*shopObj[q]['num'];
+                $("#shopitem_"+p).find('.order-num').html(shopObj[q]['num']);
+                $("#shopitem_"+p).find('.shop-price').html('￥'+shopObj[q]['price']);
+                $("#shop_"+p).find('.order-num').html(shopObj[q]['num']);
+            }else if(shopObj[q]['num']==0){  //如果该商品减完，就删掉该商品操作
+                $("#shop_"+p).find('.order-num').html(0);
+                shopArr.splice($.inArray(p,shopArr),1);
+                $("#shopitem_"+p).parent().remove();
+                if($(".shop-list-auto").html()==""){
+                    $(".shoping-car").hide();
+                }
+                $("#shop_"+p).find('.add').removeClass('active');
+                $("#shop_"+p).find('.add').siblings().hide();
+                $("#shop_"+p).removeAttr("list_num");
+                $("#shop_"+p).removeAttr("id");
+            }
+            //下面是单价
+            singlePrice=shopObj[q]['num']==0 ? shopObj[q]['price'] : shopObj[q]['price']/shopObj[q]['num'];
+            oTotalPrice=oHandle ? oTotalPrice+singlePrice : oTotalPrice-singlePrice;
+            oHandle ? oNumArr[2]++ : oNumArr[2]--;
+        }
+        function comCarhandle(_this,oHandle){    //购物车加减操作
+            var _comItem=_this.parent().parent().attr("id").split('_')[1];  //获得购物车里面所操作商品的id
+            var _arrq=_comItem-1;   //购物车里面所操作商品的id转化为所存数组对象的索引
+            //oHandle ? oComObj[_arrq]['num']+=1 : oComObj[_arrq]['num']-=1;   //购物车操作为加商品数量增加，反之相反
+//                    var arrId;
+//                    for(var c in comArr[s]){      //封装套餐参数
+//                        arrId=oComObj[s][comArr[s][c]];
+//                        comNumArr[s].push(arrId["num"]);
+//                        comNameArr[s].push(arrId["name"]);
+//                        comPriceArr[s].push(arrId["price"]);
+//                    }
+
+            cutCom(_arrq,oHandle);
+        }
+        function cutCom(q,oHandle){   //购物车加减
+            var p=q+1;
+            var comIdItem;
+            var singlePrice;
+            var prevComNum=oComObj[q]['num'];
+            oHandle ? oComObj[q]['num']+=1 : oComObj[q]['num']-=1;   //购物车操作为加商品数量增加，反之相反
+            if(oComObj[q]['num']>0){  //下面三元运算符如果购物车操作是加，会除以加之前的数量，获得此单品的单价
+                oComObj[q]['price']=oComObj[q]['price']/(oHandle ? oComObj[q]['num']-1 : oComObj[q]['num']+1)*oComObj[q]['num'];
+                for(var comq in comArr[q]){
+                    oHandle ? comNumArr[q][comq]+=(comNumArr[q][comq]/prevComNum) : comNumArr[q][comq]-=(comNumArr[q][comq]/prevComNum);
+                    oHandle ? comPriceArr[q][comq]+=(comPriceArr[q][comq]/prevComNum) : comPriceArr[comq]-=(comPriceArr[q][comq]/prevComNum);
+                    comIdItem=$("#com"+q+"item"+comq);
+                    comIdItem.find(".order-num").html(comNumArr[q][comq]);
+                    comIdItem.find(".order-price").html(comPriceArr[q][comq]);
+                }
+                $("#comitem_"+p).find('.order-num').html(oComObj[q]['num']);
+                $("#comitem_"+p).find('.shop-price').html('￥'+oComObj[q]['price']);
+                $("#com_"+p).find('.order-num').html(oComObj[q]['num']);
+            }else if(oComObj[q]['num']==0){  //如果该商品减完，就删掉该商品操作
+                $("#com_"+p).find('.order-num').html(0);
+                oComArr.splice($.inArray(p,oComArr),1);
+                $("#comitem_"+p).parent().remove();
+                if($(".shop-list-auto").html()==""){
+                    $(".shoping-car").hide();
+                }
+                $("#com_"+p).find('.add').removeClass('active');
+                $("#com_"+p).find('.add').siblings().hide();
+                $("#com_"+p).removeAttr("list_num");
+                $("#com_"+p).removeAttr("id");
+                for(var comq in comArr[q]){
+                    $("#com"+q+"item"+comq).parent().remove();
+                }
+            }
+            //下面是单价
+            singlePrice=oComObj[q]['num']==0 ? oComObj[q]['price'] : oComObj[q]['price']/oComObj[q]['num'];
+            oTotalPrice=oHandle ? oTotalPrice+singlePrice : oTotalPrice-singlePrice;
+            oHandle ? oNumArr[2]++ : oNumArr[2]--;
+        }
+        function shopForId(){
+            var oShopItem="#order_list section div.cating-list-item";
+            $(oShopItem).each(function(i){
+                var x=i+1;
+                $(this).find("div.desc-item").attr("forId",x);
+            })
+        }
+        function showShopInfo(_arr){
+            var a=_arr.length;
+            var p=0;
+            var q=0;
+            var k=0;
+            var _obj=shopObj;
+            var _shopListHtml='';
+            var _comHtml='';
+            var _comListHtml='';
+            $("#shops_info").html("");
+            for(var z=0;z<a;z++){
+                p=z+1;
+                q=_arr[z]-1;
+                $("#shops_info").append('<div id="info_'+_arr[z]+'" class="list-desc shop"><div class="order-name '+_obj[q]["forid"]+'">'+_obj[q]["name"]+'</div><div class="item shop-num">x '+_obj[q]["num"]+'</div><div class="item text-right shop-price">￥'+_obj[q]["price"]+'</div></div>');
+            }
+            var comNums,comNames,comPrices;
+            for(var j in oComArr){
+                k=oComArr[j]-1;
+                comNums=comNumArr[k],comNames=comNameArr[k],comPrices=comPriceArr[k];
+                _comHtml='<div id="odcomitem_'+oComArr[j]+'" class="list-desc shop"><div class="order-name">'+oComObj[k]["name"]+'</div><div class="item shop-num">x '+oComObj[k]["num"]+'</div><div class="item text-right shop-price">￥'+oComObj[k]["price"]+'</div></div>';
+                $("#shops_info").append(_comHtml);
+                for(var c in comNums){
+                    _comListHtml='<div id="odcom'+k+'item'+c+'" class="list-desc shop bg-color-f6"><div class="order-name">'+comNames[c]+'<span class="s-fz-16">('+oComObj[k]["name"]+'配送)</div><div class="item shop-num">x '+oComObj[k]["num"]+'</div><div class="item text-right shop-price">￥'+comPrices[c]+'</div></div>';
+                    $("#shops_info").append(_comListHtml);
+                }
+            }
+        }
+        function shopCar(_arr){
+            var a=_arr.length;
+            var p=0;
+            var q=0;
+            var k=0;
+            var _obj=shopObj;
+            var _shopListHtml='';
+            var _comHtml='';
+            var _comListHtml='';
+            $(".shop-list-auto").html("");
+            for(var z=0;z<a;z++){
+                p=z+1;
+                q=_arr[z]-1;
+                _shopListHtml='<div class="item"><ul id="shopitem_'+_arr[z]+'"><li class="shop-name">'+_obj[q]["name"]+'</li><li class="shop-price">￥'+_obj[q]["price"]+'</li><li class="shop-control-num"><i class="cut"></i><span class="order-num">'+_obj[q]["num"]+'</span><i class="add"></i></li></ul></div>';
+                $(".shop-list-auto").append(_shopListHtml);
+
+            }
+            var comNums,comNames,comPrices;
+            for(var j in oComArr){
+                k=oComArr[j]-1;
+                comNums=comNumArr[k],comNames=comNameArr[k],comPrices=comPriceArr[k];
+                _comHtml='<div class="item"><ul id="comitem_'+oComArr[j]+'"><li class="shop-name">'+oComObj[k]["name"]+'</li><li class="shop-price">￥'+oComObj[k]["price"]+'</li><li class="shop-control-num"><i class="cut"></i><span class="order-num">'+oComObj[k]["num"]+'</span><i class="add"></i></li></ul></div>';
+                $(".shop-list-auto").append(_comHtml);
+                for(var c in comNums){
+                    _comListHtml='<div class="item bg-color-f6"><ul id="com'+k+'item'+c+'"><li class="shop-name">'+comNames[c]+'<span class="s-fz-16">('+oComObj[k]["name"]+'配送)</li><li class="shop-price">￥'+comPrices[c]+'</li><li class="shop-control-num s-text-center"><span class="order-num">'+comNums[c]+'</span></li></ul></div>';
+                    $(".shop-list-auto").append(_comListHtml);
+                }
+            }
+        }
+        function totalNum(){   //价格数量总结
+            if(oNumArr[2]>0){
+                $("#finish").show();
+                $("#shop-temp").hide();
+                $("#shop-temp").siblings().show();
+            }else{
+                $("#finish").hide();
+                $("#shop-temp").show();
+                $("#shop-temp").siblings().hide();
+            }
+            $("#total_num").html(oNumArr[2]);
+            $("#total_price1").html(oTotalPrice);
+            $("#total_price").html(oTotalPrice);
+        }
+        function payEnd(){   //支付成功或失败
+            var pay_state=false;  //支付变量
+            $("#commit_foot").click(function(){
+                $(".end-parent").show();
+                $(".order-end").fadeIn();
+                if(pay_state){
+                    $(".pay-end.lose").show("f");
+                }else{
+                    $(".pay-end.success").show("f");
+                }
+            })
+            touch.on(".order-end","touchend",function(){
+                $(".end-parent").hide();
+                $(".pay-end").hide("f");
+                $(".order-end").fadeOut();
+            })
+        }
+        var oNumTop=$("#total_num").offset().top;
+        var oNumLeft=$("#total_num").offset().left;
+        var oAniTop;
+        var oAniLeft;
+        function addAni(thisAni){   //添加商品动画效果
+            oAniTop=thisAni.offset().top;
+            oAniLeft=thisAni.offset().left;
+            $(".addanimate").css({top:oAniTop,left:oAniLeft});
+            $(".addanimate").animate({opacity:1,top:oNumTop,left:oNumLeft},'1000',aniAfter);
+            function aniAfter(){
+                totalNum();
+                transAfter();
+            }
+        }
+        function transAfter(){
+            $(".shoping").addClass("addani");
+            setTimeout(addani,1000);
+        }
+        function addani(){
+            $(".shoping").removeClass("addani");
+        }
+        var _shopArrs=[];
+        var _shopObjs={};
+        function selectShop(){
+            for(var i=0;i<shopArr.length;i++){
+                _shopArrs[i]=[shopObj[i]['forid'],shopObj[i]['name'],shopObj[i]['price'],shopObj[i]['num']];
+            }
+        }
+        selectShop();  //所点餐的数据
+        $("#s_comboqr").on("click",function(){   //确认套餐
+            complus();   //添加商品
+            comboFood($(this));
+            addAni(_oComThis());
+            $("#s_pop_combo").hide();
+        })
+
+    })
+</script>
+</body>
+</html>
