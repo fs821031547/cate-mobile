@@ -196,3 +196,6 @@ section.cating-box{width: 100%; height: 100%;  padding-top: 44px; padding-bottom
 .s-combo-foot input{text-align: center;font-size: 14px;  -webkit-box-flex:1;-moz-box-flex:1;box-flex:1; background: #D71417;color: #fff;display: block;border: 0;}
 .s-combo-foot:after{position: absolute;content: ""; top: 0;bottom: 0; background: #fff;width: 1px;left: 50%;transform: scaleX(.5);}
 /*order-commit*/
+.define-css{
+	width:100px;
+}
